@@ -1,0 +1,52 @@
+<div class="main">
+  <div class="d-flex flex-row wrapper-side">
+    <div class="sideBar-bp" [ngClass]="toggleStatus?'collapsed':''">
+      <section class="logo">
+        <img class="logo-img" alt="logo" width="66" src="https://dev.botpenguin.relinns.com.au/assets/images/logo-v2.svg" (click)="toggleBar(dropdown_click)">
+        <!-- <div class="collapse-sidebar">
+          <span class="side-icon overflow-hidden"> < </span>
+        </div> -->
+      </section>
+      <section class=" middle-sidebar list">
+        <div class="create-btn">
+          <button class="btn-bp btn-blue transition" tabindex="0" [ngClass]="toggleStatus?'sidebar-closed':''">
+              <span class="create-btn-text" *ngIf="!toggleStatus">Create Button</span>
+              <span class="create-btn-text" *ngIf="toggleStatus">+</span>
+          </button>
+        </div>
+        <ng-container>
+          <div *ngFor="let menu of data; let i = index">
+            <div class="btn-bp list-items transition dropdown" *ngIf="menu.parent==0">
+              <div class="menu-header d-flex">
+                <img class="menu-img" alt="" height="20" srcset="" width="20" src={{menu.iconPath}} style="margin-top: 3px;">
+                <span class="menu-title" [ngClass]="toggleStatus?'collapse':''">{{menu.title}}</span>
+                <span class="dropdown-icon">
+                <img alt="" src="https://dev.botpenguin.relinns.com.au/assets/version2/images/sidebar/arrow_drop_down_black.svg" srcset="" (click)="dropdown(menu.id,menu.title)">
+                </span>
+              </div>
+              <ng-container>
+                <div class="options" *ngFor="let item of data">
+                  <div class="menu-header d-flex" *ngIf=" dropdown_click && item.parent==id && menu.id==id">
+                    <img class="menu-img" alt="" height="20" srcset="" width="20" src={{item.iconPath}} style="margin-top: 3px;">
+                    <span class="menu-title" [ngClass]="toggleStatus?'collapse':''">{{item.title}}</span>
+                    <!-- <span class="dropdown-icon">
+                    <img alt="" src="https://dev.botpenguin.relinns.com.au/assets/version2/images/sidebar/arrow_drop_down_black.svg" srcset="" id="dropdownMenuButton">
+                    </span> -->
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </ng-container>
+      </section>
+      <section class="bottom-sidebar list" >
+        <div [ngClass]="toggleStatus?'footer-section':'cursor-pointer'">
+          <img alt="" src="https://dev.botpenguin.relinns.com.au/assets/version2/images/sidebar/arrow_drop_up_black.svg" srcset="" width="38">
+        </div>
+      </section>
+    </div>
+    <div class="content">
+      <div class="h1 m-3">Hello</div>
+    </div>
+  </div>
+</div>

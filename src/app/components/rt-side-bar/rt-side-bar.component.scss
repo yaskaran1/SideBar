@@ -1,0 +1,130 @@
+.container {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.logo-img {
+  width: 52px;
+  margin: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.collapse-sidebar {
+  margin-top: 22px;
+  font-size: 15px;
+  opacity: 0.5;
+  float: right;
+  cursor: pointer;
+}
+.btn-blue {
+  background-color: #226cf4;
+  border-color: #226cf4;
+  border: 1px solid #226cf4;
+  color: white;
+}
+.btn-bp {
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 1;
+  font-family: "Matter-Medium";
+  text-align: center;
+}
+.menu-header {
+  padding: 5px;
+}
+.create-btn {
+  margin: auto;
+}
+.list-items {
+  opacity: 1;
+  height: auto;
+  width: 182px;
+  text-align: left;
+  padding-left: 35px;
+  border-radius: 10px;
+}
+
+.transition {
+  transition: all 0.5s;
+  transition-property: width, border-radius, margin-left;
+}
+
+.menu-title {
+  padding-left: 10px;
+}
+
+.dropdown-icon {
+  margin-left: auto;
+}
+
+.bottom-sidebar {
+  position: fixed;
+  bottom: 0;
+  width: 225px;
+}
+
+section {
+  display: block;
+}
+
+.wrapper-side {
+  height: 100%;
+}
+
+.sideBar-bp {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f3f4f5;
+  opacity: 1;
+  transition: min-width 0.4s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: min-width;
+  font-size: 14px;
+}
+
+.main {
+  height: 100%;
+}
+.create-btn {
+  margin-bottom: 10px;
+}
+
+.side-icon {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.collapsed {
+  max-width: 100px;
+}
+
+.sidebar-closed {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 26px;
+}
+
+.create-btn {
+  padding-left: 32px;
+  padding-right: 15px;
+}
+
+.footer-section {
+  margin-left: 25px;
+}
+
+.cursor-pointer{
+  margin-left:80px;
+}
